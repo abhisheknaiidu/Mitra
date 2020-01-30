@@ -1,0 +1,38 @@
+.banner-area {
+    background-image: linear-gradient(to right bottom, #dd08af, #ff5c7b, #f89f76, #e9d3a8, #f5f7f1);
+}
+
+.feature-area h1 {
+    background-image : linear-gradient(to right bottom, #dd08af, #ff5c7b, #f89f76, #e9d3a8, #f5f7f1);
+}
+
+.number {
+     font : linear-gradient(to right bottom, #dd08af, #ff5c7b, #f89f76, #e9d3a8, #f5f7f1);
+}
+
+.service-left h2 {
+    font-size: 95px;
+}
+
+.single-services .lnr {
+    background-image : linear-gradient(to right bottom, #dd08af, #ff5c7b, #f89f76, #e9d3a8, #f5f7f1);
+}
+
+.footer-social a:hover {
+    background-image: linear-gradient(to right bottom, #dd08af, #ff5c7b, #f89f76, #e9d3a8, #f5f7f1);
+}
+.primary-btn {
+    background-image: linear-gradient(to right bottom, #dd08af, #ff5c7b, #f89f76, #e9d3a8, #f5f7f1); 
+}
+
+.pt-40 {
+    padding-top: 15px;
+}
+
+.pb-40 {
+    padding-bottom: 15px;
+}
+
+.footer-text i, .footer-text a {
+    color: #f89f76;
+}
