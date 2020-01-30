@@ -1,0 +1,627 @@
+body{
+	background-color:#f9f9ff;
+	line-height:1.65em;
+}
+.section-gap {
+	padding: 120px 0;
+}
+.section-title {
+	padding-bottom: 30px;
+	h2 {
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 0;
+		@include media-breakpoint-down (md) {
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+
+.p1-gradient-bg {
+	background-image: -moz-linear-gradient( 0deg,#3c50ca 0%,#77d5f7 100%);
+	background-image: -webkit-linear-gradient( 0deg,#3c50ca 0%,#77d5f7 100%);
+	background-image: -ms-linear-gradient( 0deg,#3c50ca 0%,#77d5f7 100%);
+}
+
+.p2-gradient-bg {
+	background-image: -moz-linear-gradient( 90deg,#3c50ca 0%,#77d5f7 50%);
+	background-image: -webkit-linear-gradient( 90deg,#3c50ca 0%,#77d5f7 50%);
+	background-image: -ms-linear-gradient( 90deg,#3c50ca 0%,#77d5f7 50%);
+}
+
+.p1-gradient-color {
+	background: -moz-linear-gradient(0deg, #3c50ca, #77d5f7);
+	background: -webkit-linear-gradient(0deg, #3c50ca, #77d5f7);
+	background: -ms-linear-gradient(0deg, #3c50ca, #77d5f7);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.primary-btn {
+	line-height: 40px;
+	padding: 0 30px;
+	border-radius: 20px;
+	@extend .p1-gradient-bg;
+	border: 1px solid #eee;
+	color: $primary-color;
+	display: inline-block;
+	font-weight: 500;
+	position: relative;
+	@include transition();
+	cursor: pointer;
+	text-transform: uppercase;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		.mr-10{
+			margin-right:20px;
+		}
+	}
+	span{
+		color:$white;
+			@include transition();
+	}
+
+	@media( max-width:414px){
+		width: 220px;
+
+	}
+}
+
+//--------- Start Banner Area -------------//
+.banner-area {
+	background: url(../img/header-bg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	.fullscreen {
+		@include media-breakpoint-down (sm) {
+			height: 600px !important;
+		}
+	}
+
+	.genric-btn{
+		&:hover{
+			background-color:$white;
+			color:$primary-color;
+		}
+	}
+}
+.banner-content {
+	@include media-breakpoint-down(sm) {
+		margin-top: 100px;
+	}
+	h1 {
+		color:$white;
+		font-size: 124px;
+		letter-spacing:25px;
+		text-indent: 22px;
+		font-weight: 300;
+		line-height: 1.15em;
+		margin-bottom: 20px;
+		@include text-shadow();
+		@include media-breakpoint-down(md) {
+			font-size: 34px;
+		}
+		@include media-breakpoint-down(sm){
+			font-size:20px;
+		}
+	}
+	h4{
+		letter-spacing:2px;
+		font-weight:200;
+		@include media-breakpoint-down(sm){
+			font-size:14px;
+			margin-bottom:10px;
+		}
+	}
+}
+
+.generic-banner {
+	background: url(../img/header-bg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	&.element-banner {
+		background: url(../img/header-bg.jpg) no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.height {
+		height: 550px;
+		@include media-breakpoint-down (sm) {
+			height: 400px;
+		}
+	}
+	.banner-content {
+		h2 {
+			line-height: 1.2em;
+			margin-bottom: 20px;
+			br {
+				@include media-breakpoint-down (md) {
+					display: none;
+				}
+			}
+		}
+		p {
+			margin-bottom: 0;
+			font-size: 16px;
+			br {
+				@include media-breakpoint-down (md) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+//--------- End Banner Area -------------//
+
+//--------- Start feature Area -------------//
+
+.feature-area{
+	padding-bottom:200px;
+	background:#fff;
+	text-align:left;
+	h1{
+		letter-spacing: 3px;
+		margin-bottom: 20px;
+		font-weight:600;
+		font-size:48px;
+		text-transform:uppercase;
+		@include text-shadow();
+		@extend .p1-gradient-color;
+		margin-right:20px;
+	}
+	h2{
+		font-size:18px;
+		margin-top:6px;
+		font-weight: 600;
+		text-transform:uppercase;
+		letter-spacing:1.25px;
+	}
+	p{
+		font-size:14px;
+		line-height: 25px;
+		margin-top: 15px;
+	}
+
+	.single-feature{
+		margin-bottom:30px;
+		@include media-breakpoint-down (lg) {
+			margin-bottom:0px;
+		}
+	}
+
+}
+
+
+
+//--------- End feature Area -------------//
+//--------- start video Area -------------//
+
+
+.video-area{
+	margin-top:-10%;
+}
+
+.feature-video {
+	position: relative;
+	min-height: 450px;
+	border: 20px solid #f3f3f3;
+	background: url(../img/video-bg.jpg) no-repeat center center/cover;
+	box-shadow: 0.872px 9.962px 30px 0px rgba(0, 0, 0, 0.3);
+	.overlay-bg {
+		background: rgba($black, .50);
+	}
+	.play-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
+}
+
+.content-wrap{
+	h2{
+		font-size:36px;
+		font-weight:200;
+		span{
+			font-weight:600;
+		}
+	}
+}
+
+//--------- End video Area -------------//
+
+//--------- Start service Area -------------//
+
+.service-area{
+	background-color:$black;
+}
+
+
+.service-left{
+	h2{
+		font-size:36px;
+		font-weight:200;
+		span{
+			font-weight:600
+		}
+	}
+	p{
+		margin-top:25px;
+	}
+	
+	@media( max-width:768px){
+		padding-top:100px;
+		padding-bottom:100px;
+	}
+}
+
+.service-right{
+	background:$white;
+}
+
+.single-services{		
+	padding: 40px 50px;
+	border: 1px solid #eeeeee80;
+		.lnr{
+			font-size:30px;
+			@extend .p1-gradient-color;
+		}
+	h2{
+		font-size:18px;
+		font-weight:600;
+		letter-spacing:2px;
+		text-transform:uppercase;
+		margin-top:25px;
+		margin-bottom:25px;
+	}
+	@media(max-width:1024px) and (min-width:767px){
+		padding: 40px 22px;	
+	}
+}
+
+//--------- End service Area -------------//
+
+//--------- Start latest work Area -------------//
+
+.latest-work-area{
+	text-align:center;
+	h2{
+		font-size:36px;
+		font-weight:200;
+		margin-bottom:25px;
+		span{
+			font-weight:600;
+		}
+	}
+}
+
+.active-work-slider{
+	margin-top:30px;
+		.next-trigger, .prev-trigger {
+		width: 40px;
+		background: $white;
+		border: 1px solid #eee;
+		text-align: center;
+		@include transition();
+		cursor: pointer;
+		span {
+			line-height: 40px;
+			@include transition();
+		}
+		&:hover {
+			@extend .p1-gradient-bg;
+			border: 1px solid $primary-color;
+			span {
+				color: $white;
+			}
+		}
+	}
+}
+
+
+.owl-prev{
+	position: absolute;
+	left: 8%;
+	margin-top: -20%;
+	background: #fff;
+	padding: 15px;
+	@include transition();
+	&:hover{
+		.lnr{
+			color:#fff;
+		}
+		@extend .p1-gradient-bg;
+	}	
+}
+
+.owl-next{
+	position: absolute;
+	right: 8%;
+	margin-top: -20%;
+	background: #fff;
+	padding: 15px;
+	@include transition();
+	&:hover{
+		.lnr{
+			color:#fff;
+		}
+		@extend .p1-gradient-bg;
+	}	
+}
+
+.active-work-slider2{
+	display:none !important;
+}
+
+
+@media( max-width:630px){
+	.active-work-slider{
+		display:none !important;
+	}
+	.active-work-slider2{
+		display:block !important;
+	}
+}
+
+
+.owl-carousel .owl-item img{
+	opacity:.5;
+}
+
+.owl-carousel .active img{
+	opacity:1;
+	border:20px solid #fff;
+}
+
+
+
+//--------- End latest work Area -------------//
+
+//--------- Subcription Area -------------//
+.subscription-area {
+	background:#fff;
+	h3{
+		font-size:36px;
+		font-weight:200;
+		span{
+			font-weight:600;
+		}
+	}
+	p{
+		font-size:14px;
+		font-weight:300;
+		margin-top:20px;
+	}
+
+	@media( max-width: 768px){
+		padding-bottom:140px;
+	}
+
+}
+.subscription {
+	input {
+		width: 100%;
+		line-height: 50px;
+		padding: 0 180px 0 25px;
+		border: none;
+		font-weight: 300;
+		border-radius: 25px;
+		background: #f9f9ff;
+	}
+	.primary-btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 5px;
+	}
+	.info {
+		position: absolute;
+		top: 60px;
+		left: 50%;
+		transform: translateX(-50%);
+		color: $white;
+		font-size: 12px;
+		&.valid {
+			color: green;
+			text-align: center;
+			width:100%;
+		}
+		&.error {
+			color: red;
+			text-align:center;
+			width:100%;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		input {
+			padding: 0 25px;
+		}
+		.primary-btn {
+			top: 120%;
+			transform: translate(50%, 0);
+			right: 50%;
+		}
+		.info {
+			top: 110px;
+		}
+	}
+}
+//--------- Subcription Area -------------//
+
+//-------- Start Contact Form ----------//
+
+
+
+.contact-area {
+	h2{
+		color:$white;
+		font-size:36px;
+		font-weight: 600px;
+		letter-spacing:4px;
+	}
+	p{
+		margin-top: 15px;
+		color:$white;
+	}
+}
+.contact-btn{
+	margin-top:20px;
+}
+
+.contact-form {
+	@include media-breakpoint-down (sm) {
+		margin-top: 30px;
+		padding: 0px 20px;
+	}
+	::-webkit-input-placeholder {
+		color:    #777777;
+		font-weight: 300;
+	}
+	:-moz-placeholder {
+		color:    #777777;
+		opacity:  1;
+		font-weight: 300;
+	}
+	::-moz-placeholder {
+		color:    #777777;
+		opacity:  1;
+		font-weight: 300;
+	}
+	:-ms-input-placeholder { 
+		color:    #777777;
+		font-weight: 300;
+	}
+	::-ms-input-placeholder { 
+		color:    #777777;
+		font-weight: 300;
+	}
+	background: $white;
+	padding: 0px 70px;
+}
+.common-input {
+	border: 1px solid rgba(#6f7598, .3);
+	line-height: 48px;
+	width: 100%;
+	display: block;
+	background: transparent;
+	padding: 0 25px;
+	color: $text-color;
+}
+.common-textarea {
+	border: 1px solid rgba(#6f7598, .3);
+	width: 100%;
+	display: block;
+	background: transparent;
+	padding: 15px 25px;
+	color: $text-color;
+	height: 150px;
+	resize: none;
+}
+.alert-msg {
+	color: #777;
+	margin-top: 60px;
+	width: 100%;
+	text-align: center;
+}
+
+.element-contact{
+	background-color:#f9f9ff;
+}
+
+@media(max-width:768px){
+	.contact-right{
+		padding-bottom: 60px;
+		padding-top: 60px;
+	}
+}
+
+@media(max-width:767px){
+	.contact-left{
+		padding-top: 60px;
+	}
+}
+
+
+//-------- End Contact Form ----------//
+
+.footer-area{
+	background-color:$black;
+}
+
+
+.footer-social {
+	@include media-breakpoint-down(sm) {
+		margin-top: 10px;
+	}
+	a {
+		width: 30px;
+		line-height: 30px;
+		display: inline-block;
+		text-align: center;
+		margin-right: 5px;
+		background: #1e1e1e;
+		i {
+		    	color: #777777;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			color:$white;
+			@extend .p1-gradient-bg;
+			i{
+				color:$white;
+			}
+		}
+	}
+}
+
+
+.footer-text{
+	i,a{
+		color:$primary-color;
+	}
+}
+
+//----------- Start Generic Page -------------//
+
+.about-generic-area {
+	background: $white;
+	.border-top-generic {
+		padding: 100px 15px;
+	}
+	p {
+		margin-bottom: 20px;
+	}
+}
+.white-bg {
+	background: $white;
+}
+.section-top-border {
+	padding: 70px 0;
+	border-top: 1px dotted #eee;
+}
+.switch-wrap {
+	margin-bottom: 10px;
+	p {
+		margin: 0;
+	}
+}
+//----------- End Generic Page -------------//
+
+
+
+
+
